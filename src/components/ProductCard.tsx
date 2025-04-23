@@ -35,7 +35,7 @@ export default function ProductCard({ onBuyNow }: ProductCardProps) {
         <div className="p-8 md:w-1/2">
           <div className="tracking-wide text-sm text-indigo-500 font-semibold mb-1">Multi-Chain Swap</div>
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Supported chains : Ethereum, Binance Smart chain, Base, Solana</h1>
-          <div className="text-3xl font-bold text-green-600 mb-4">$99.00</div>
+          <div className="text-3xl font-bold text-green-600 mb-4"><del>$99.00</del> $19.99</div>
           
           <p className="text-gray-600 dark:text-gray-300 mb-4">
            Supporting Dexs are Uniswap, Pancakeswap, 1Inch, Raydium, Jupiter. Also all pump.fun tokens will be swapable.

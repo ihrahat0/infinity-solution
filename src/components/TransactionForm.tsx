@@ -18,19 +18,19 @@ export default function TransactionForm() {
   const [showDownloadPopup, setShowDownloadPopup] = useState(false);
   const DOWNLOAD_LINK = "https://drive.google.com/file/d/1KQj_LQOZdUgOSGLv0-s9X0wjv1YxDGE6/view";
 
-  // Fixed amounts per token type (all equivalent to $99)
+  // Fixed amounts per token type (all equivalent to $20)
   const getFixedAmount = (token: TokenInfo | null): string => {
-    if (!token) return '99';
+    if (!token) return '20';
     
     if (token.isNative) {
-      // Native token amounts equivalent to $99
-      if (token.symbol === 'ETH') return '0.068';
-      if (token.symbol === 'BNB') return '0.18'; 
-      if (token.symbol === 'MATIC') return '600';
-      return '99'; // fallback
+      // Native token amounts equivalent to $20
+      if (token.symbol === 'ETH') return '0.0112';
+      if (token.symbol === 'BNB') return '0.033'; 
+      if (token.symbol === 'MATIC') return '90';
+      return '20'; // fallback
     } else {
-      // Stablecoins (USDT/USDC) are always 99
-      return '99';
+      // Stablecoins (USDT/USDC) are always 20
+      return '20';
     }
   };
 
@@ -178,7 +178,7 @@ export default function TransactionForm() {
       <div className="mb-4 p-4 bg-black/[.03] dark:bg-white/[.03] rounded-lg">
         <p className="font-medium mb-1">Fixed Recipient</p>
         <p className="text-sm font-mono">{FIXED_RECIPIENT}</p>
-        <p className="text-sm mt-2">Send $99 worth to purchase the source code</p>
+        <p className="text-sm mt-2">Send $20 worth to purchase the source code</p>
       </div>
       
       <div className="flex justify-between mb-6">
@@ -236,9 +236,9 @@ export default function TransactionForm() {
             Fixed Amount {selectedToken && `(${selectedToken.symbol})`}
           </label>
           <div className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md bg-white dark:bg-gray-800 text-gray-500">
-            {selectedToken ? getFixedAmount(selectedToken) : '99'}
+            {selectedToken ? getFixedAmount(selectedToken) : '20'}
           </div>
-          <p className="text-xs text-gray-500 mt-1">Equivalent to $99</p>
+          <p className="text-xs text-gray-500 mt-1">Equivalent to $20</p>
         </div>
         
         <button
@@ -290,7 +290,7 @@ export default function TransactionForm() {
             
             <div className="text-center">
               <h3 className="text-xl font-bold mb-4">Manual Payment</h3>
-              <p className="mb-6">Please send $99 worth of cryptocurrency to this address:</p>
+              <p className="mb-6">Please send $20 worth of cryptocurrency to this address:</p>
               
               <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg mb-4 flex items-center">
                 <span className="font-mono text-sm break-all">{FIXED_RECIPIENT}</span>

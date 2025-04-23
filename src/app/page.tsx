@@ -58,7 +58,7 @@ export default function Home() {
                     <h2 className="text-2xl font-bold mb-6 text-center">Complete Your Purchase</h2>
                     <div className="flex flex-col items-center mb-4">
                       <p className="text-center text-gray-600 dark:text-gray-400 mb-4">
-                        Connect your wallet to pay $99 using your preferred cryptocurrency
+                        Connect your wallet to pay $20 using your preferred cryptocurrency
                       </p>
                       <Suspense fallback={<div>Loading wallet connect...</div>}>
                         <WalletConnectButton />
